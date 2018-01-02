@@ -27,13 +27,3 @@ for ( @{$data->{added_products}->{deployed}} ) {
    $stemcell =~ /.*stemcell-(3.*\.\d+)/;
    print "$1\n";
 }
-
-#print "\n\ndone with first loop\n\n";
-#
-#for ( @{$data->{added_products}->{deployed}} ) {
-#  my $stemcell = $_->{stemcell};
-#  #$stemcell =~ /\"(cell)/;
-#  $stemcell =~ /.*stemcell-(3.*\.\d+)/;
-#  print "$1\n";
-#}
-#

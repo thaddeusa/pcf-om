@@ -10,9 +10,13 @@ RUN gem install json --no-ri --no-rdoc
 #RUN gem install cf-uaac --no-ri --no-rdoc
 
 COPY om-alpine om-alpine
-COPY terraform terraform
-#COPY pcf-metadata pcf-metadata
 COPY bosh bosh
+
+# get terraform
+RUN wget https://releases.hashicorp.com/terraform/0.9.11/terraform_0.9.11_linux_amd64.zip
+RUN unzip terraform_0.9.11_linux_amd64.zip
+RUN chmod a+x terraform
+RUN ln terraform /usr/local/bin/terraform
 
 COPY pcf_diag.pl pcf_diag.pl
 
