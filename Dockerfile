@@ -1,4 +1,4 @@
-#Docker image with aws-cli for copying Sonic PCF backup files
+#Docker image with aws-cli for copying PCF backup files
 FROM alpine:3.5
 RUN apk update
 RUN apk add bash wget curl jq
@@ -13,8 +13,8 @@ COPY om-alpine om-alpine
 COPY bosh bosh
 
 # get terraform
-RUN wget https://releases.hashicorp.com/terraform/0.9.11/terraform_0.9.11_linux_amd64.zip
-RUN unzip terraform_0.9.11_linux_amd64.zip
+RUN wget https://releases.hashicorp.com/terraform/0.10.8/terraform_0.10.8_linux_amd64.zip
+RUN unzip terraform_0.10.8_linux_amd64.zip
 RUN chmod a+x terraform
 RUN ln terraform /usr/local/bin/terraform
 

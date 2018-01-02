@@ -1,7 +1,7 @@
 # pcf-omg
 Everything needed to create a docker image for managing Pivotal Cloud Foundry using the om tool.
 
-Currently uses terraform 0.9.11
+Currently uses terraform 0.10.8
 
 ## To compile om for alpine
  - docker run -i -t -v "$PWD":/omtool golang:1.7.4-alpine sh
