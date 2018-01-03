@@ -3,6 +3,7 @@ use strict;
 use warnings;
 
 binmode STDOUT, ":utf8";
+
 use utf8;
 
 use JSON;
