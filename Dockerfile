@@ -1,7 +1,7 @@
 #Docker image with aws-cli for copying PCF backup files
 FROM alpine:3.5
 RUN apk update
-RUN apk add bash wget curl jq
+RUN apk add bash wget curl jq unzip
 RUN apk add openssh
 
 RUN apk --update add ruby ruby-dev gcc make g++ musl-dev
